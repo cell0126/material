@@ -10,16 +10,19 @@
 
 Summary:
 
-As NGS is not accurate enough to detect rare mutations in viruses, CirSeq introduces an additional error correction mechanism. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple linked repeats for one RNA fragment, their sequences can be compared and sequencing errors can be detected. In this way a consensus sequence for the RNA fragment is determined.
+Virual populations are highly diverse and evolve rapidly. As NGS is not accurate enough to detect rare mutations in viruses, CirSeq introduces an additional error correction mechanism. RNA fragments are circulized and then cDNA is produced via rolling circle reverse transcription. As there are now multiple linked repeats for one RNA fragment, their sequences can be compared and sequencing errors can be detected. In this way a consensus sequence for the RNA fragment is determined.
 
 ![Scheme](https://www.illumina.com/content/dam/illumina-marketing/images/tools/sequencing/cirseq.png)
 
 Technology:
-* circularisation of RNA
+* virus amplification to increase the viral RNA content
+* fragmentation and circularisation of RNA
 * rolling-circle reverse transcription creates linked repeats of genomic material from one individual virus in the population
+* cloned by stadard mRNA sequencing
+* Illumina MiSeq sequencing
 
 Application:
-Understanding evolution of virus populations including low-frequency mutations which are inadequatley detected with NGS
+Understanding the rapid evolution of virus populations including low-frequency mutations which are inadequatley detected with NGS. Additionally to traditional sequencing, more complex information can be obtained as for exmaple the link between fitness values and the corresponding mutations or the definition of mutation rates within a population.
 
 Statistics:
 * As part of the method: comparing the different repeats helps to differentiate between sequencing errors and low-frequency mutations;  quality score Q=-10log(e), where e is the error probability
